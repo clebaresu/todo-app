@@ -2,10 +2,9 @@ import { LitElement, html, css, property } from 'lit-element';
 import { openWcLogo } from './open-wc-logo.js';
 
 export class TodoApp extends LitElement {
+  @property({ type: String }) page = 'main';
 
-  @property({type: String}) page = 'main';
-
-  @property({type: String}) title = '';
+  @property({ type: String }) title = '';
 
   static styles = css`
     :host {

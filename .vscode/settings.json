@@ -1,7 +1,7 @@
 {
   "liveServer.settings.port": 5001,
   "liveServer.settings.root": "/dist",
-  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.CustomBrowser": "safari",
   "liveServer.settings.https": {
     "enable": false,
     "cert": "${workspaceRoot}/https/localhost+2.pem",

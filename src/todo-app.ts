@@ -1,3 +1,3 @@
-import { TodoApp } from './views/TodoApp.js';
+// eslint-disable-next-line import/extensions
+import './views/todo-view';
 
-customElements.define('todo-app', TodoApp);

@@ -1,25 +1,93 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="Description" content="Put your description here.">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" type="image/png" href="./src/img/icons/favicon.png" />
+  <title>todo-app</title>
+  <base href="/">
+
+  <!-- iOS -->
+  <link rel="apple-touch-icon" href="./src/img/icons/icon-144x144.png" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-status-bar-style" content="black" />
+  <meta name="mobile-web-app-title" content="TutorialApp" />
+  <script src="./vendor/custom-elements-es5-adapter.js"></script>
+
   <base href="/">
 
   <style>
-    html,
-    body {
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      --base-color: #fff;
+      --dark-color: #2a3443;
+      --shade-color: #5e6673;
+      --success-color: #f0f8f1;
+      --warning-color: #fbeeec;
+      --light-background: #f4f5f7;
+      --spacing: 16px;
       margin: 0;
       padding: 0;
-      font-family: sans-serif;
-      background-color: #ededed;
     }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
+      Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol';
+      margin: 0;
+      padding: 0;
+      color: var(--dark-color);
+      font-size: 18px;
+      line-height: 1.5rem;
+    }
+
+    [hidden] {
+      display: none;
+    }
+
+    a {
+      color: var(--dark-color);
+    }
+
+    a:visited,
+    a:active {
+      color: var(--shade-color);
+    }
+
+    header,
+    main,
+    nav {
+      padding: var(--spacing);
+    }
+
+    nav {
+      height: 3em;
+    }
+
+    header {
+      background: var(--dark-color);
+      color: var(--base-color);
+    }
+
   </style>
   <title>todo-app</title>
+  <!-- ! DO NOT REMOVE THIS COMMENT, WE NEED ITS CLOSING MARKER -->
 </head>
 
 <body>
+  <header>
+    <h1>Todo app</h1>
+  </header>
+  <nav>
+    <a href="/">Todos</a>
+    <a href="/stats">Stats</a>
+  </nav>
   <todo-app></todo-app>
 
   <script type="module" src="./out-tsc/src/todo-app.js"></script>
